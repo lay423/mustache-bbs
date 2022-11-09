@@ -1,0 +1,19 @@
+{{>layouts/header}}
+<div>
+    이페이지는 show입니다.
+</div>
+<div>
+    <br>
+    {{#article}}
+        {{id}} {{title}} {{content}}
+    {{/article}}
+</div>
+<div>
+    <br>
+    <a href="/articles/{{id}}/edit" class="btn btn-success">Edit</a>
+</div>
+
+
+<a href="/articles/new">new article</a>
+<a href="/articles">articles List</a>
+{{>layouts/footer}}
